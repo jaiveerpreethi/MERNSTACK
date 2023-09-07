@@ -3,56 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TASK 3.CSS">
-    <title>Company Contact Country</title>
+    <link rel="stylesheet" href="TASK 2.CSS">
+    <title>Navigation Bar</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        background-color: skyblue;
+        width: 200px;
+        padding: 20px 0;
+        position: fixed;
+        height: fit-content;
+        text-align: center;
+    }
+    
+    .nav-item {
+        display: block;
+        padding: 10px 0;
+        color: blue;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .nav-item1 {
+        display: block;
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        background-color: darkorange;
+    }
+    
+    .nav-item:hover {
+        background-color: orange;
+        color: white;
+    }
+    
+    .horizontal-navbar {
+        background-color: lightgray;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        height: 40px;
+        width: fit-content;
+        position: fixed; 
+        top: 0;
+        right: 0; 
+    }
+    
+    .horizontal-nav-item {
+        padding: 10px 20px;
+        color: blue;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .horizontal-nav-item1{
+        padding: 10px 20px;
+        color: white;
+        background-color: gray;
+        text-decoration: none;
+    }
+    .horizontal-nav-item:hover {
+        background-color: gray;
+        color: white;
+    }
+    </style>
 </head>
 <body>
-    <table class="my-table">
-        <tr class="title-row" style="background-color: green;">
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-        </tr>
-        <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-        <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-        </tr>
-        <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>I-JK</td>
-        </tr>
-        <tr>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Laughing Bacchus Winecellars</td>
-            <td>Yoshi Tannamuri</td>
-            <td>Canada</td>
-        </tr>
-        <tr>
-            <td>Magazzini Alimentari Riuniti</td>
-            <td>Giovanni Rovelli</td>
-            <td>Italy</td>
-        </tr>
-    </table>
+    <nav class="navbar">
+        <a href="#" class="nav-item1">Home</a><br>
+        <a href="#" class="nav-item">Java</a><br>
+        <a href="#" class="nav-item">CSS</a><br>
+        <a href="#" class="nav-item">HTML</a><br>
+        <a href="#" class="nav-item">Bootstrap</a>
+        
+    </nav>
+
+    <nav class="horizontal-navbar">
+        <a href="#" class="horizontal-nav-item1">Home</a>
+        <a href="#" class="horizontal-nav-item">Java</a>
+        <a href="#" class="horizontal-nav-item">HTML</a>
+        <a href="#" class="horizontal-nav-item">CSS</a>
+        <a href="#" class="horizontal-nav-item">   </a>
+    </nav>
 </body>
 </html>
